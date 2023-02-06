@@ -13,6 +13,7 @@ public:
 	void AnimationUpdate(bool& playCMD,float dt);
 	void play(bool isPlay);
 	void setSpeed(float speedX);
+	void setSequence(int sequence);
 	//void AnimationUpdate(const std::vector<cMeshObj*>& animationOBJList, float dt);
 
 	std::vector<cMeshObj*> animationOBJList;

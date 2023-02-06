@@ -114,6 +114,21 @@ void AnimationManager::setSpeed(float speedX)
 	}
 }
 
+void AnimationManager::setSequence(int sequence)
+{
+	for (size_t i = 0; i < animationOBJList.size(); i++)
+	{
+		cMeshObj* AnimationOBJ = animationOBJList[i];
+
+		cAnimation& animation = AnimationOBJ->Animation;
+		if (sequence < animation.seq.size())
+		{
+			animation.tag = animation.seq[sequence].c_str();
+			animation.AnimationTime = 0.f;
+		}
+	}
+}
+
 int AnimationManager::FindPositionKeyIndex(const AnimationData& animation, float time)
 {
 	for (size_t i = 0; i < animation.PositionKeyFrames.size(); i++)

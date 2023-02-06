@@ -53,6 +53,7 @@ public:
 	~cAnimation();
 
 	std::string tag;
+	std::vector<std::string> seq;
 	float AnimationTime;
 	bool IsPlaying;
 	bool IsLooping;

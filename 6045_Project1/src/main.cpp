@@ -50,6 +50,7 @@ double g_LastCall5s;
 double g_CurrentTime;
 
 bool g_PlayAnimation = false;
+unsigned int g_AnimationSeq = 0;
 
 const int FRAMES_PER_SECOND = 30;
 const double FRAME_RATE = (double)1 / FRAMES_PER_SECOND;
@@ -805,12 +806,17 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
     if (key == GLFW_KEY_RIGHT && action == GLFW_RELEASE)
     {
-        
+        g_AnimationSeq++;
+        g_pAnimationManager->setSequence(g_AnimationSeq);
     }
 
     if (key == GLFW_KEY_LEFT && action == GLFW_RELEASE)
     {
-        
+        if (g_AnimationSeq > 0)
+        {
+            g_AnimationSeq--;
+        }
+        g_pAnimationManager->setSequence(g_AnimationSeq);
     }
 
     if (key == GLFW_KEY_1 && action == GLFW_RELEASE)
@@ -1022,6 +1028,7 @@ void createAnimation(cVAOManager* pVAOManager)
     seq1_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f,0.f,0.f,0.f), 0.f, None));
     seq1_enemy1.Duration = 5.f;
     g_pAnimationManager->AddAnimation("PosLerpNoEasing", seq1_enemy1);
+    Enemy1->Animation.seq.push_back("PosLerpNoEasing");
     
     AnimationData seq1_enemy2;
     seq1_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
@@ -1030,6 +1037,7 @@ void createAnimation(cVAOManager* pVAOManager)
     seq1_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
     seq1_enemy2.Duration = 5.f;
     g_pAnimationManager->AddAnimation("PosLerpEaseIn", seq1_enemy2);
+    Enemy2->Animation.seq.push_back("PosLerpEaseIn");
 
     AnimationData seq1_enemy3;
     seq1_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
@@ -1038,6 +1046,8 @@ void createAnimation(cVAOManager* pVAOManager)
     seq1_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
     seq1_enemy3.Duration = 5.f;
     g_pAnimationManager->AddAnimation("PosLerpEaseOut", seq1_enemy3);
+    Enemy3->Animation.seq.push_back("PosLerpEaseOut");
+
 
     AnimationData seq1_enemy4;
     seq1_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
@@ -1046,6 +1056,7 @@ void createAnimation(cVAOManager* pVAOManager)
     seq1_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
     seq1_enemy4.Duration = 5.f;
     g_pAnimationManager->AddAnimation("PosLerpEaseInOut", seq1_enemy4);
+    Enemy4->Animation.seq.push_back("PosLerpEaseInOut");
 
     //sequence 2
     AnimationData seq2_enemy1;
@@ -1056,6 +1067,7 @@ void createAnimation(cVAOManager* pVAOManager)
     seq2_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, None));
     seq2_enemy1.Duration = 5.f;
     g_pAnimationManager->AddAnimation("ScaleLerpNoEasing", seq2_enemy1);
+    Enemy1->Animation.seq.push_back("ScaleLerpNoEasing");
 
     AnimationData seq2_enemy2;
     seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
@@ -1065,6 +1077,8 @@ void createAnimation(cVAOManager* pVAOManager)
     seq2_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
     seq2_enemy2.Duration = 5.f;
     g_pAnimationManager->AddAnimation("ScaleLerpEaseIn", seq2_enemy2);
+    Enemy2->Animation.seq.push_back("ScaleLerpEaseIn");
+
 
     AnimationData seq2_enemy3;
     seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
@@ -1074,6 +1088,8 @@ void createAnimation(cVAOManager* pVAOManager)
     seq2_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
     seq2_enemy3.Duration = 5.f;
     g_pAnimationManager->AddAnimation("ScaleLerpEaseOut", seq2_enemy3);
+    Enemy3->Animation.seq.push_back("ScaleLerpEaseOut");
+
 
     AnimationData seq2_enemy4;
     seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
@@ -1083,5 +1099,61 @@ void createAnimation(cVAOManager* pVAOManager)
     seq2_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
     seq2_enemy4.Duration = 5.f;
     g_pAnimationManager->AddAnimation("ScaleLerpEaseInOut", seq2_enemy4);
+    Enemy4->Animation.seq.push_back("ScaleLerpEaseInOut");
 
+
+    //sequence 3
+    AnimationData seq3_enemy1;
+    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, None));
+    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, 12.5f), 2.5f, None));
+    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, None));
+    seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, None));
+    //seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, None));
+    seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, None));
+    seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, None));
+    seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, None));
+    seq3_enemy1.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("RotationSlerpNoEasing", seq3_enemy1);
+    Enemy1->Animation.seq.push_back("RotationSlerpNoEasing");
+
+    AnimationData seq3_enemy2;
+    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
+    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, -12.5f), 2.5f, EaseIn));
+    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseIn));
+    seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseIn));
+    //seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseIn));
+    seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
+    seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseIn));
+    seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseIn));
+    seq3_enemy2.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("RotationSlerpEaseIn", seq3_enemy2);
+    Enemy2->Animation.seq.push_back("RotationSlerpEaseIn");
+
+
+    AnimationData seq3_enemy3;
+    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
+    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, 12.5f), 2.5f, EaseOut));
+    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseOut));
+    seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseOut));
+    //seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseOut));
+    seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
+    seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseOut));
+    seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseOut));
+    seq3_enemy3.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("RotationSlerpEaseOut", seq3_enemy3);
+    Enemy3->Animation.seq.push_back("RotationSlerpEaseOut");
+
+
+    AnimationData seq3_enemy4;
+    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
+    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, -12.5f), 2.5f, EaseInOut));
+    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseInOut));
+    seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseInOut));
+    //seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseInOut));
+    seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
+    seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseInOut));
+    seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseInOut));
+    seq3_enemy4.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("RotationSlerpEaseInOut", seq3_enemy4);
+    Enemy4->Animation.seq.push_back("RotationSlerpEaseInOut");
 }
