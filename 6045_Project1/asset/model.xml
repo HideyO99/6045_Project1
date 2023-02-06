@@ -1,0 +1,529 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<PLYMODEL>
+	<model name="floorA">asset/model/SM_Env_Dwarf_Floor_01.ply
+		<modelInstance>floorA01<posX>-9</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA02<posX>-8</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA03<posX>-7</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA04<posX>-6</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA05<posX>-5</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA06<posX>-4</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA07<posX>-3</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA08<posX>-2</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA09<posX>-1</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA10<posX> 0</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA11<posX> 1</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA12<posX> 2</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA13<posX> 3</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA14<posX> 4</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA15<posX> 5</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA16<posX> 6</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA17<posX> 7</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA18<posX> 8</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA19<posX> 9</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorA20<posX>10</posX><posZ>-9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB01<posX>-9</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB02<posX>-8</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB03<posX>-7</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB04<posX>-6</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB05<posX>-5</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB06<posX>-4</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB07<posX>-3</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB08<posX>-2</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB09<posX>-1</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB10<posX> 0</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB11<posX> 1</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB12<posX> 2</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB13<posX> 3</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB14<posX> 4</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB15<posX> 5</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB16<posX> 6</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB17<posX> 7</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB18<posX> 8</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB19<posX> 9</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorB20<posX>10</posX><posZ>-8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC01<posX>-9</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC02<posX>-8</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC03<posX>-7</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC04<posX>-6</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC05<posX>-5</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC06<posX>-4</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC07<posX>-3</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC08<posX>-2</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC09<posX>-1</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC10<posX> 0</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC11<posX> 1</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC12<posX> 2</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC13<posX> 3</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC14<posX> 4</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC15<posX> 5</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC16<posX> 6</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC17<posX> 7</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC18<posX> 8</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC19<posX> 9</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorC20<posX>10</posX><posZ>-7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD01<posX>-9</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD02<posX>-8</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD03<posX>-7</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD04<posX>-6</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD05<posX>-5</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD06<posX>-4</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD07<posX>-3</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD08<posX>-2</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD09<posX>-1</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD10<posX> 0</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD11<posX> 1</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD12<posX> 2</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD13<posX> 3</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD14<posX> 4</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD15<posX> 5</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD16<posX> 6</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD17<posX> 7</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD18<posX> 8</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD19<posX> 9</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorD20<posX>10</posX><posZ>-6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE01<posX>-9</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE02<posX>-8</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE03<posX>-7</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE04<posX>-6</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE05<posX>-5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE06<posX>-4</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE07<posX>-3</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE08<posX>-2</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE09<posX>-1</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE10<posX> 0</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE11<posX> 1</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE12<posX> 2</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE13<posX> 3</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE14<posX> 4</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE15<posX> 5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE16<posX> 6</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE17<posX> 7</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE18<posX> 8</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE19<posX> 9</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorE20<posX>10</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF01<posX>-9</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF02<posX>-8</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF03<posX>-7</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF04<posX>-6</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF05<posX>-5</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF06<posX>-4</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF07<posX>-3</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF08<posX>-2</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF09<posX>-1</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF10<posX> 0</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF11<posX> 1</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF12<posX> 2</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF13<posX> 3</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF14<posX> 4</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF15<posX> 5</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF16<posX> 6</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF17<posX> 7</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF18<posX> 8</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF19<posX> 9</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorF20<posX>10</posX><posZ>-4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG01<posX>-9</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG02<posX>-8</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG03<posX>-7</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG04<posX>-6</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG05<posX>-5</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG06<posX>-4</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG07<posX>-3</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG08<posX>-2</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG09<posX>-1</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG10<posX> 0</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG11<posX> 1</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG12<posX> 2</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG13<posX> 3</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG14<posX> 4</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG15<posX> 5</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG16<posX> 6</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG17<posX> 7</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG18<posX> 8</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG19<posX> 9</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorG20<posX>10</posX><posZ>-3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH01<posX>-9</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH02<posX>-8</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH03<posX>-7</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH04<posX>-6</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH05<posX>-5</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH06<posX>-4</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH07<posX>-3</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH08<posX>-2</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH09<posX>-1</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH10<posX> 0</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH11<posX> 1</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH12<posX> 2</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH13<posX> 3</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH14<posX> 4</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH15<posX> 5</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH16<posX> 6</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH17<posX> 7</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH18<posX> 8</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH19<posX> 9</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorH20<posX>10</posX><posZ>-2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI01<posX>-9</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI02<posX>-8</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI03<posX>-7</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI04<posX>-6</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI05<posX>-5</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI06<posX>-4</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI07<posX>-3</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI08<posX>-2</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI09<posX>-1</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI10<posX> 0</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI11<posX> 1</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI12<posX> 2</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI13<posX> 3</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI14<posX> 4</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI15<posX> 5</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI16<posX> 6</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI17<posX> 7</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI18<posX> 8</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI19<posX> 9</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorI20<posX>10</posX><posZ>-1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ01<posX>-9</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ02<posX>-8</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ03<posX>-7</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ04<posX>-6</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ05<posX>-5</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ06<posX>-4</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ07<posX>-3</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ08<posX>-2</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ09<posX>-1</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ10<posX> 0</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ11<posX> 1</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ12<posX> 2</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ13<posX> 3</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ14<posX> 4</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ15<posX> 5</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ16<posX> 6</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ17<posX> 7</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ18<posX> 8</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ19<posX> 9</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorJ20<posX>10</posX><posZ> 0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK01<posX>-9</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK02<posX>-8</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK03<posX>-7</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK04<posX>-6</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK05<posX>-5</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK06<posX>-4</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK07<posX>-3</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK08<posX>-2</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK09<posX>-1</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK10<posX> 0</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK11<posX> 1</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK12<posX> 2</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK13<posX> 3</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK14<posX> 4</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK15<posX> 5</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK16<posX> 6</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK17<posX> 7</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK18<posX> 8</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK19<posX> 9</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorK20<posX>10</posX><posZ> 1</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL01<posX>-9</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL02<posX>-8</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL03<posX>-7</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL04<posX>-6</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL05<posX>-5</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL06<posX>-4</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL07<posX>-3</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL08<posX>-2</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL09<posX>-1</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL10<posX> 0</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL11<posX> 1</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL12<posX> 2</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL13<posX> 3</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL14<posX> 4</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL15<posX> 5</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL16<posX> 6</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL17<posX> 7</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL18<posX> 8</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL19<posX> 9</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorL20<posX>10</posX><posZ> 2</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM01<posX>-9</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM02<posX>-8</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM03<posX>-7</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM04<posX>-6</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM05<posX>-5</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM06<posX>-4</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM07<posX>-3</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM08<posX>-2</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM09<posX>-1</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM10<posX> 0</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM11<posX> 1</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM12<posX> 2</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM13<posX> 3</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM14<posX> 4</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM15<posX> 5</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM16<posX> 6</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM17<posX> 7</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM18<posX> 8</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM19<posX> 9</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorM20<posX>10</posX><posZ> 3</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN01<posX>-9</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN02<posX>-8</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN03<posX>-7</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN04<posX>-6</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN05<posX>-5</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN06<posX>-4</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN07<posX>-3</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN08<posX>-2</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN09<posX>-1</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN10<posX> 0</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN11<posX> 1</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN12<posX> 2</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN13<posX> 3</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN14<posX> 4</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN15<posX> 5</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN16<posX> 6</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN17<posX> 7</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN18<posX> 8</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN19<posX> 9</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorN20<posX>10</posX><posZ> 4</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO01<posX>-9</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO02<posX>-8</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO03<posX>-7</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO04<posX>-6</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO05<posX>-5</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO06<posX>-4</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO07<posX>-3</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO08<posX>-2</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO09<posX>-1</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO10<posX> 0</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO11<posX> 1</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO12<posX> 2</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO13<posX> 3</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO14<posX> 4</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO15<posX> 5</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO16<posX> 6</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO17<posX> 7</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO18<posX> 8</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO19<posX> 9</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorO20<posX>10</posX><posZ> 5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP01<posX>-9</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP02<posX>-8</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP03<posX>-7</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP04<posX>-6</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP05<posX>-5</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP06<posX>-4</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP07<posX>-3</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP08<posX>-2</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP09<posX>-1</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP10<posX> 0</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP11<posX> 1</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP12<posX> 2</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP13<posX> 3</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP14<posX> 4</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP15<posX> 5</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP16<posX> 6</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP17<posX> 7</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP18<posX> 8</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP19<posX> 9</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorP20<posX>10</posX><posZ> 6</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ01<posX>-9</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ02<posX>-8</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ03<posX>-7</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ04<posX>-6</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ05<posX>-5</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ06<posX>-4</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ07<posX>-3</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ08<posX>-2</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ09<posX>-1</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ10<posX> 0</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ11<posX> 1</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ12<posX> 2</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ13<posX> 3</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ14<posX> 4</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ15<posX> 5</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ16<posX> 6</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ17<posX> 7</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ18<posX> 8</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ19<posX> 9</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorQ20<posX>10</posX><posZ> 7</posZ><rotateY>0</rotateY></modelInstance>	
+		<modelInstance>floorR01<posX>-9</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR02<posX>-8</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR03<posX>-7</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR04<posX>-6</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR05<posX>-5</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR06<posX>-4</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR07<posX>-3</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR08<posX>-2</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR09<posX>-1</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR10<posX> 0</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR11<posX> 1</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR12<posX> 2</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR13<posX> 3</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR14<posX> 4</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR15<posX> 5</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR16<posX> 6</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR17<posX> 7</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR18<posX> 8</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR19<posX> 9</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorR20<posX>10</posX><posZ> 8</posZ><rotateY>0</rotateY></modelInstance>	
+		<modelInstance>floorS01<posX>-9</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS02<posX>-8</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS03<posX>-7</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS04<posX>-6</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS05<posX>-5</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS06<posX>-4</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS07<posX>-3</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS08<posX>-2</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS09<posX>-1</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS10<posX> 0</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS11<posX> 1</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS12<posX> 2</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS13<posX> 3</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS14<posX> 4</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS15<posX> 5</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS16<posX> 6</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS17<posX> 7</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS18<posX> 8</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS19<posX> 9</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorS20<posX>10</posX><posZ> 9</posZ><rotateY>0</rotateY></modelInstance>		
+		<modelInstance>floorT01<posX>-9</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT02<posX>-8</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT03<posX>-7</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT04<posX>-6</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT05<posX>-5</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT06<posX>-4</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT07<posX>-3</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT08<posX>-2</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT09<posX>-1</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT10<posX> 0</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT11<posX> 1</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT12<posX> 2</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT13<posX> 3</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT14<posX> 4</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT15<posX> 5</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT16<posX> 6</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT17<posX> 7</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT18<posX> 8</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT19<posX> 9</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>floorT20<posX>10</posX><posZ>10</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	
+	<model name="wall">asset/model/SM_Env_Dwarf_Wall_06.ply
+		<modelInstance>wallBU01<posX>-10</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU02<posX> -9</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU03<posX> -8</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU04<posX> -7</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU05<posX> -6</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU06<posX> -5</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU07<posX> -4</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU08<posX> -3</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU09<posX> -2</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU10<posX> -1</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU11<posX>  0</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU12<posX>  1</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU13<posX>  2</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU14<posX>  3</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU15<posX>  4</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU16<posX>  5</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU17<posX>  6</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU18<posX>  7</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU19<posX>  8</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+		<modelInstance>wallBU20<posX>  9</posX><posZ>-10</posZ><rotateY>  3.141</rotateY></modelInstance>
+
+		<modelInstance>wallBL01<posX>-10</posX><posZ> -9</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL02<posX>-10</posX><posZ> -8</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL03<posX>-10</posX><posZ> -7</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL04<posX>-10</posX><posZ> -6</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL05<posX>-10</posX><posZ> -5</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL06<posX>-10</posX><posZ> -4</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL07<posX>-10</posX><posZ> -3</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL08<posX>-10</posX><posZ> -2</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL09<posX>-10</posX><posZ> -1</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL10<posX>-10</posX><posZ>  0</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL11<posX>-10</posX><posZ>  1</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL12<posX>-10</posX><posZ>  2</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL13<posX>-10</posX><posZ>  3</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL14<posX>-10</posX><posZ>  4</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL15<posX>-10</posX><posZ>  5</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL16<posX>-10</posX><posZ>  6</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL17<posX>-10</posX><posZ>  7</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL18<posX>-10</posX><posZ>  8</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL19<posX>-10</posX><posZ>  9</posZ><rotateY>-1.5708</rotateY></modelInstance>
+		<modelInstance>wallBL20<posX>-10</posX><posZ> 10</posZ><rotateY>-1.5708</rotateY></modelInstance>
+
+		<modelInstance>wallBR01<posX> 10</posX><posZ>-10</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR02<posX> 10</posX><posZ> -9</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR03<posX> 10</posX><posZ> -8</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR04<posX> 10</posX><posZ> -7</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR05<posX> 10</posX><posZ> -6</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR06<posX> 10</posX><posZ> -5</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR07<posX> 10</posX><posZ> -4</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR08<posX> 10</posX><posZ> -3</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR09<posX> 10</posX><posZ> -2</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR10<posX> 10</posX><posZ> -1</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR11<posX> 10</posX><posZ>  0</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR12<posX> 10</posX><posZ>  1</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR13<posX> 10</posX><posZ>  2</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR14<posX> 10</posX><posZ>  3</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR15<posX> 10</posX><posZ>  4</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR16<posX> 10</posX><posZ>  5</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR17<posX> 10</posX><posZ>  6</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR18<posX> 10</posX><posZ>  7</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR19<posX> 10</posX><posZ>  8</posZ><rotateY> 1.5708</rotateY></modelInstance>
+		<modelInstance>wallBR20<posX> 10</posX><posZ>  9</posZ><rotateY> 1.5708</rotateY></modelInstance>
+
+		<modelInstance>wallBD01<posX> -9</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD02<posX> -8</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD03<posX> -7</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD04<posX> -6</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD05<posX> -5</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD06<posX> -4</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD07<posX> -3</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD08<posX> -2</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD09<posX> -1</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD10<posX>  0</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD11<posX>  1</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD12<posX>  2</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD13<posX>  3</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD14<posX>  4</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD15<posX>  5</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD16<posX>  6</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD17<posX>  7</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD18<posX>  8</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD19<posX>  9</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		<modelInstance>wallBD20<posX> 10</posX><posZ> 10</posZ><rotateY>      0</rotateY></modelInstance>
+		
+	</model>
+	<model name="terrain">asset/model/flat_terrain.ply
+		<modelInstance>terrain<posX>0</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	<model name="skybox">asset/model/UV_Sphere_for_Skybox_inverted_Normals_xyz_uv_n_rgba.ply
+		<modelInstance>skybox<posX>0</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	<model name="enemy">asset/model/dreadnoght.ply
+		<modelInstance>enemy1<posX>5</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy2<posX>5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy3<posX>-5</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy4<posX>-5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy5<posX>0</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy6<posX>0</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy7<posX>5</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy8<posX>-5</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy9<posX>-2.5</posX><posZ>-2.5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>enemy10<posX>2.5</posX><posZ>2.5</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	
+	<model name="bullet">asset/model/UV_Sphere_Cylindrical_UIV_Projection_bullet.ply
+		<modelInstance>bullet<posX>0</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	<model name="player">asset/model/dreadnoght1.ply
+		<modelInstance>Player<posX>0</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+	<model name="obstacle">asset/model/SM_Prop_Barrel_02.ply
+		<modelInstance>obstacle1<posX>0</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>obstacle2<posX>5</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>obstacle3<posX>5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>obstacle4<posX>-5</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
+		<modelInstance>obstacle5<posX>-5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
+	</model>
+</PLYMODEL>
+<EYE_LOCATION>
+	<x>90</x>
+	<y>100</y>
+	<z>0</z>
+</EYE_LOCATION>

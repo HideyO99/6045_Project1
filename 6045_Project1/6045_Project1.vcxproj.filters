@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{98847c48-6809-4a1d-8428-d881b0d700dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI">
+      <UniqueIdentifier>{f7463f41-7c27-4872-bbb9-c40bc2fbffe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{51cab5ea-268c-4b9c-922e-4523d6db9cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshOBJ">
+      <UniqueIdentifier>{888c48e6-c3ef-4c6b-a891-4ff8b3d11cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physic">
+      <UniqueIdentifier>{64fbccd2-e602-471f-9f30-66e2ab7bb24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{f432c8da-badb-4bc0-b375-bc949b566ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture">
+      <UniqueIdentifier>{89d11f13-034e-4ac8-bb0f-6029fe54aca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VAOManager">
+      <UniqueIdentifier>{fbce471d-3796-48a9-b088-da69341c73a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{22e4f48b-8e16-4c7f-9dbf-0ea161dda56a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{56006625-7ff7-4458-9068-476fb7c69092}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GUI\cGUI.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_demo.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_draw.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_impl_glfw.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_impl_opengl3.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_tables.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev\inc\imgui\imgui_widgets.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light\cLight.cpp">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light\cLightManager.cpp">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MeshObj\cMeshObj.cpp">
+      <Filter>MeshOBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\cBoundingBox.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\cObject.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\cPhysicSystem.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\cTriangle.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\math.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physic\Vector3.cpp">
+      <Filter>Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\cShader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\cShaderManager.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader\cShaderProgram.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture\C24BitBMPpixel.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture\cTextureFromBMP.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture\cTextureManager.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VAOManager\cModelDrawInfo.cpp">
+      <Filter>VAOManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VAOManager\cVAOManager.cpp">
+      <Filter>VAOManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XML\cXML.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AI\cAI.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AI\cSteering.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GUI\cGUI.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imconfig.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imgui.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imgui_impl_glfw.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imgui_impl_opengl3.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imgui_internal.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imstb_rectpack.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imstb_textedit.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev\inc\imgui\imstb_truetype.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light\cLight.h">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light\cLightManager.h">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeshObj\cMeshObj.h">
+      <Filter>MeshOBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\cBoundingBox.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\cObject.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\cPhysicSystem.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\cTriangle.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\math.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\shape.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Physic\Vector3.h">
+      <Filter>Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shader\cShaderManager.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture\C24BitBMPpixel.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture\cTextureFromBMP.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture\cTextureManager.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VAOManager\cModelDrawInfo.h">
+      <Filter>VAOManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VAOManager\cVAOManager.h">
+      <Filter>VAOManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XML\cXML.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="src\globalOpenGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AI\cAI.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AI\cSteering.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Shader\fragmentShader.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="src\Shader\vertexShader.glsl">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
