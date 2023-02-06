@@ -500,12 +500,7 @@
 		<modelInstance>enemy2<posX>5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
 		<modelInstance>enemy3<posX>-5</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
 		<modelInstance>enemy4<posX>-5</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy5<posX>0</posX><posZ>5</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy6<posX>0</posX><posZ>-5</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy7<posX>5</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy8<posX>-5</posX><posZ>0</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy9<posX>-2.5</posX><posZ>-2.5</posZ><rotateY>0</rotateY></modelInstance>
-		<modelInstance>enemy10<posX>2.5</posX><posZ>2.5</posZ><rotateY>0</rotateY></modelInstance>
+
 	</model>
 	
 	<model name="bullet">asset/model/UV_Sphere_Cylindrical_UIV_Projection_bullet.ply

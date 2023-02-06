@@ -14,6 +14,7 @@ enum EasingType
 
 struct PositionKeyFrame
 {
+	PositionKeyFrame(glm::vec3 Pos, float time, EasingType type = None) : Pos(Pos), time(time), type(type) {}
 	glm::vec3 Pos;
 	float time;
 	EasingType type;
@@ -21,6 +22,7 @@ struct PositionKeyFrame
 
 struct ScaleKeyFrame
 {
+	ScaleKeyFrame(glm::vec3 Scale, float time, EasingType type = None) : Scale(Scale), time(time), type(type) {}
 	glm::vec3 Scale;
 	float time;
 	EasingType type;
@@ -28,6 +30,7 @@ struct ScaleKeyFrame
 
 struct RotationKeyFrame
 {
+	RotationKeyFrame(glm::quat Rotation, float time, EasingType type = None) : Rotation(Rotation), time(time), type(type) {}
 	glm::quat Rotation;
 	float time;
 	//bool useSlerp;

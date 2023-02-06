@@ -24,8 +24,9 @@ bool AnimationManager::AddAnimation(const std::string& name, AnimationData anima
 	return true;
 }
 
-void AnimationManager::AnimationUpdate(const std::vector<cMeshObj*>& animationOBJList, float dt)
+void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 {
+	bool isPlaying = false;
 	for (size_t i = 0; i < animationOBJList.size(); i++)
 	{
 		cMeshObj* AnimationOBJ = animationOBJList[i];
@@ -39,6 +40,7 @@ void AnimationManager::AnimationUpdate(const std::vector<cMeshObj*>& animationOB
 
 			if (animation.IsPlaying && animation.Speed != 0.f)
 			{
+				isPlaying = true;
 				animation.AnimationTime += dt * animation.Speed;
 				if (animation.AnimationTime > animationData.Duration)
 				{
@@ -57,6 +59,7 @@ void AnimationManager::AnimationUpdate(const std::vector<cMeshObj*>& animationOB
 					{
 						animation.AnimationTime = animationData.Duration;
 						animation.IsPlaying = false;
+						isPlaying = false;
 					}
 				}
 				else if (animation.AnimationTime < 0.f)
@@ -76,13 +79,38 @@ void AnimationManager::AnimationUpdate(const std::vector<cMeshObj*>& animationOB
 					{
 						animation.AnimationTime = 0.f;
 						animation.IsPlaying = false;
+						isPlaying = false;
 					}
 				}
+
+				AnimationOBJ->position = GetAnimationPosition(animationData, animation.AnimationTime);
+				AnimationOBJ->scale = GetAnimationScale(animationData, animation.AnimationTime);
+				AnimationOBJ->rotation = glm::eulerAngles(GetAnimationRotation(animationData, animation.AnimationTime));
 			}
-			AnimationOBJ->position = GetAnimationPosition(animationData, animation.AnimationTime);
-			AnimationOBJ->scale = GetAnimationScale(animationData, animation.AnimationTime);
-			AnimationOBJ->rotation = glm::eulerAngles(GetAnimationRotation(animationData, animation.AnimationTime));
 		}
+	}
+	playCMD = isPlaying;
+}
+
+void AnimationManager::play(bool isPlay)
+{
+	for (size_t i = 0; i < animationOBJList.size(); i++)
+	{
+		cMeshObj* AnimationOBJ = animationOBJList[i];
+
+		cAnimation& animation = AnimationOBJ->Animation;
+		animation.IsPlaying = isPlay;
+	}
+}
+
+void AnimationManager::setSpeed(float speedX)
+{
+	for (size_t i = 0; i < animationOBJList.size(); i++)
+	{
+		cMeshObj* AnimationOBJ = animationOBJList[i];
+
+		cAnimation& animation = AnimationOBJ->Animation;
+		animation.Speed = speedX;
 	}
 }
 
@@ -128,7 +156,7 @@ int AnimationManager::FindRotationKeyIndex(const AnimationData& animation, float
 glm::vec3 AnimationManager::GetAnimationPosition(const AnimationData& animation, float time)
 {
 	int currentPosKFIndex = FindPositionKeyIndex(animation, time);
-	if ((currentPosKFIndex == 0)|| (currentPosKFIndex == animation.PositionKeyFrames.size() - 1))
+	if ((animation.PositionKeyFrames.size() == 1)|| (currentPosKFIndex == animation.PositionKeyFrames.size() - 1))
 	{
 		return animation.PositionKeyFrames[currentPosKFIndex].Pos;
 	}
@@ -162,7 +190,7 @@ glm::vec3 AnimationManager::GetAnimationPosition(const AnimationData& animation,
 glm::vec3 AnimationManager::GetAnimationScale(const AnimationData& animation, float time)
 {
 	int currentScaleKFIndex = FindScaleKeyIndex(animation, time);
-	if ((currentScaleKFIndex == 0) || (currentScaleKFIndex == animation.ScaleKeyFrames.size() - 1))
+	if ((animation.ScaleKeyFrames.size() == 1) || (currentScaleKFIndex == animation.ScaleKeyFrames.size() - 1))
 	{
 		return animation.ScaleKeyFrames[currentScaleKFIndex].Scale;
 	}
@@ -196,7 +224,7 @@ glm::vec3 AnimationManager::GetAnimationScale(const AnimationData& animation, fl
 glm::quat AnimationManager::GetAnimationRotation(const AnimationData& animation, float time)
 {
 	int currentRotatationKFIndex = FindRotationKeyIndex(animation, time);
-	if ((currentRotatationKFIndex == 0) || (currentRotatationKFIndex == animation.RotationKeyFrames.size() - 1))
+	if ((animation.RotationKeyFrames.size() == 1) || (currentRotatationKFIndex == animation.RotationKeyFrames.size() - 1))
 	{
 		return animation.RotationKeyFrames[currentRotatationKFIndex].Rotation;
 	}

@@ -10,7 +10,12 @@ public:
 	~AnimationManager();
 
 	bool AddAnimation(const std::string& name, AnimationData animation);
-	void AnimationUpdate(const std::vector<cMeshObj*>& animationOBJList, float dt);
+	void AnimationUpdate(bool& playCMD,float dt);
+	void play(bool isPlay);
+	void setSpeed(float speedX);
+	//void AnimationUpdate(const std::vector<cMeshObj*>& animationOBJList, float dt);
+
+	std::vector<cMeshObj*> animationOBJList;
 
 private:
 	int FindPositionKeyIndex(const AnimationData& animation, float time);
@@ -22,5 +27,6 @@ private:
 	glm::quat GetAnimationRotation(const AnimationData& animation, float time);
 
 	std::map<std::string, AnimationData> AnimationList;
+	
 };
 

@@ -488,7 +488,7 @@ bool cVAOManager::setDungeonTexture(std::string meshObjName, std::string texture
 	//}
 	for (std::map<std::string, cMeshObj* >::iterator itCurrentMesh = mapInstanceNametoMeshObj.begin(); itCurrentMesh != mapInstanceNametoMeshObj.end(); itCurrentMesh++)
 	{
-		itCurrentMesh->second->bDoNotLight = true;
+		itCurrentMesh->second->bDoNotLight = false;
 		if ((itCurrentMesh->second->meshName == "floorA") || (itCurrentMesh->second->meshName == "wall") )
 		{
 			itCurrentMesh->second->bUse_RGBA_colour = false;
@@ -526,7 +526,7 @@ bool cVAOManager::setDungeonTexture(std::string meshObjName, std::string texture
 			itCurrentMesh->second->position.x = itCurrentMesh->second->position.x * 5;
 			itCurrentMesh->second->position.y = 1;
 			itCurrentMesh->second->position.z = itCurrentMesh->second->position.z * 5;
-			itCurrentMesh->second->isVisible = true;
+			itCurrentMesh->second->isVisible = false;
 			itCurrentMesh->second->bDoNotLight = false;
 		}
 

@@ -25,6 +25,7 @@
 #include "Texture/cTextureManager.h"
 #include "time.h"
 #include "Physic/cPhysicSystem.h"
+#include "Animation/AnimationManager.h"
 
 
 #define MODEL_LIST_XML          "asset/model.xml"
@@ -61,6 +62,8 @@ cPhysicSystem g_physicSys;
 cTextureManager* g_pTextureManager = NULL;
 cObject* g_player;
 
+AnimationManager* g_pAnimationManager = NULL;
+
 
 static void error_callback(int error, const char* description)
 {
@@ -80,6 +83,8 @@ void light2Setup(cVAOManager* pVAOManager);
 void light3Setup();
 void light4Setup();
 void checkBorder();
+
+void createAnimation(cVAOManager* pVAOManager);
 
 void updateByFrameRate();
 
@@ -262,19 +267,19 @@ int main(void)
     g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy3"), &drawingInformation, cObject::TYPE_B);
     result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy4"))->meshName.c_str(), drawingInformation);
     g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy4"), &drawingInformation, cObject::TYPE_B);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy5"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy5"), &drawingInformation, cObject::TYPE_C);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy5"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy5"), &drawingInformation, cObject::TYPE_C);
 
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy6"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy6"), &drawingInformation, cObject::TYPE_A);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy7"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy7"), &drawingInformation, cObject::TYPE_A);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy8"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy8"), &drawingInformation, cObject::TYPE_B);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy9"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy9"), &drawingInformation, cObject::TYPE_B);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy10"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy10"), &drawingInformation, cObject::TYPE_C);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy6"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy6"), &drawingInformation, cObject::TYPE_A);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy7"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy7"), &drawingInformation, cObject::TYPE_A);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy8"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy8"), &drawingInformation, cObject::TYPE_B);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy9"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy9"), &drawingInformation, cObject::TYPE_B);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("enemy10"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("enemy10"), &drawingInformation, cObject::TYPE_C);
 
     result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("bullet"))->meshName.c_str(), drawingInformation);
     g_physicSys.createObject(pVAOManager->findMeshObjAddr("bullet"), &drawingInformation);
@@ -284,22 +289,27 @@ int main(void)
     g_player = playerObj->second;
     
 
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle1"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle1"), &drawingInformation);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle2"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle2"), &drawingInformation);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle3"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle3"), &drawingInformation);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle4"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle4"), &drawingInformation);
-    result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle5"))->meshName.c_str(), drawingInformation);
-    g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle5"), &drawingInformation);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle1"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle1"), &drawingInformation);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle2"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle2"), &drawingInformation);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle3"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle3"), &drawingInformation);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle4"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle4"), &drawingInformation);
+    //result = pVAOManager->FindDrawInfo((pVAOManager->findMeshObjAddr("obstacle5"))->meshName.c_str(), drawingInformation);
+    //g_physicSys.createObject(pVAOManager->findMeshObjAddr("obstacle5"), &drawingInformation);
     //g_physicSys.createEnvironment(drawingInformation);
     //g_physicSys.boundingBox.pMeshObj = pVAOManager->findMeshObjAddr("box1");
     //g_physicSys.boundingBox.pDrawInfo = pVAOManager->findDrawInfoAddr("box1");
     //g_physicSys.createObject(pVAOManager->findMeshObjAddr("P51"), pVAOManager->findDrawInfoAddr("P51"));
 
-    g_physicSys.gameUpdate();
+    //g_physicSys.gameUpdate();
+
+    //Animation
+    ::g_pAnimationManager = new AnimationManager();
+    createAnimation(pVAOManager);
+    
     cTime::update();
 
     while (!glfwWindowShouldClose(window))
@@ -782,6 +792,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         //::g_cameraTarget = glm::vec3(5.0f, 0.0f, 0.0f);
         //bIsWalkAround = !bIsWalkAround;
         g_PlayAnimation = !g_PlayAnimation;
+        g_pAnimationManager->play(g_PlayAnimation);
         if (g_PlayAnimation)
         {
             std::cout << "Play Animation" << std::endl;
@@ -804,27 +815,38 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
     if (key == GLFW_KEY_1 && action == GLFW_RELEASE)
     {
-
+        g_pAnimationManager->setSpeed(1.f);
+        std::cout << "Speed 1X" << std::endl;
     }
 
     if (key == GLFW_KEY_2 && action == GLFW_RELEASE)
     {
-
+        g_pAnimationManager->setSpeed(2.f);
+        std::cout << "Speed 2X" << std::endl;
     }
 
     if (key == GLFW_KEY_3 && action == GLFW_RELEASE)
     {
-
+        g_pAnimationManager->setSpeed(3.f);
+        std::cout << "Speed 3X" << std::endl;
     }
 
     if (key == GLFW_KEY_4 && action == GLFW_RELEASE)
     {
-
+        g_pAnimationManager->setSpeed(4.f);
+        std::cout << "Speed 4X" << std::endl;
     }
 
     if (key == GLFW_KEY_5 && action == GLFW_RELEASE)
     {
+        g_pAnimationManager->setSpeed(5.f);
+        std::cout << "Speed 5X" << std::endl;
+    }
 
+    if (key == GLFW_KEY_R && action == GLFW_RELEASE)
+    {
+        g_pAnimationManager->setSpeed(-1.f);
+        std::cout << "Reverse 1X" << std::endl;
     }
 
     //checkBorder();
@@ -848,6 +870,7 @@ void checkBorder()
         ::g_cameraEye.z = 48;
     }
 }
+
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 {
     float xpos = static_cast<float>(xposIn);
@@ -938,7 +961,8 @@ void updateByFrameRate()
 
         obj_it->second->update();
 
-        g_physicSys.updateSystem(elapsedTime);
+        g_pAnimationManager->AnimationUpdate(g_PlayAnimation, elapsedTime);
+        //g_physicSys.updateSystem(elapsedTime);
     }
     //if (g_CurrentTime >= g_LastCall5s + SEC_UPDATE)
     //{
@@ -947,4 +971,117 @@ void updateByFrameRate()
 
     //    g_physicSys.gameUpdate();
     //}
+}
+
+void createAnimation(cVAOManager* pVAOManager)
+{
+    //setup animation properties
+    cMeshObj* Enemy1 = pVAOManager->findMeshObjAddr("enemy1");
+    Enemy1->Animation.tag = "PosLerpNoEasing";
+    Enemy1->color_RGBA = glm::vec4(1.f, 1.f, 1.f, 1.f);
+    Enemy1->Animation.Speed = 1.f;
+    Enemy1->Animation.IsLooping = false;
+    Enemy1->Animation.IsPlaying = false;
+    Enemy1->Animation.AnimationTime = 0.f;
+    g_pAnimationManager->animationOBJList.push_back(Enemy1);
+
+    cMeshObj* Enemy2 = pVAOManager->findMeshObjAddr("enemy2");
+    Enemy2->Animation.tag = "PosLerpEaseIn";
+    Enemy2->color_RGBA = glm::vec4(1.f, 0.f, 0.f, 1.f);
+    Enemy2->Animation.Speed = 1.f;
+    Enemy2->Animation.IsLooping = false;
+    Enemy2->Animation.IsPlaying = false;
+    Enemy2->Animation.AnimationTime = 0.f;
+    g_pAnimationManager->animationOBJList.push_back(Enemy2);
+
+    cMeshObj* Enemy3 = pVAOManager->findMeshObjAddr("enemy3");
+    Enemy3->Animation.tag = "PosLerpEaseOut";
+    Enemy3->color_RGBA = glm::vec4(1.f, 1.f, 0.f, 1.f);
+    Enemy3->Animation.Speed = 1.f;
+    Enemy3->Animation.IsLooping = false;
+    Enemy3->Animation.IsPlaying = false;
+    Enemy3->Animation.AnimationTime = 0.f;
+    g_pAnimationManager->animationOBJList.push_back(Enemy3);
+
+    cMeshObj* Enemy4 = pVAOManager->findMeshObjAddr("enemy4");
+    Enemy4->Animation.tag = "PosLerpEaseInOut";
+    Enemy4->color_RGBA = glm::vec4(0.f, 1.f, 0.f, 1.f);
+    Enemy4->Animation.Speed = 1.f;
+    Enemy4->Animation.IsLooping = false;
+    Enemy4->Animation.IsPlaying = false;
+    Enemy4->Animation.AnimationTime = 0.f;
+    g_pAnimationManager->animationOBJList.push_back(Enemy4);
+
+    //create animation
+
+    //Sequence 1
+    AnimationData seq1_enemy1;
+    seq1_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, None));
+    seq1_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, None));
+    seq1_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, None));
+    seq1_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f,0.f,0.f,0.f), 0.f, None));
+    seq1_enemy1.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("PosLerpNoEasing", seq1_enemy1);
+    
+    AnimationData seq1_enemy2;
+    seq1_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
+    seq1_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseIn));
+    seq1_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseIn));
+    seq1_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
+    seq1_enemy2.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("PosLerpEaseIn", seq1_enemy2);
+
+    AnimationData seq1_enemy3;
+    seq1_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
+    seq1_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseOut));
+    seq1_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseOut));
+    seq1_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
+    seq1_enemy3.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("PosLerpEaseOut", seq1_enemy3);
+
+    AnimationData seq1_enemy4;
+    seq1_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
+    seq1_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseInOut));
+    seq1_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseInOut));
+    seq1_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
+    seq1_enemy4.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("PosLerpEaseInOut", seq1_enemy4);
+
+    //sequence 2
+    AnimationData seq2_enemy1;
+    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, None));
+    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, None));
+    seq2_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, None));
+    seq2_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, None));
+    seq2_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, None));
+    seq2_enemy1.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("ScaleLerpNoEasing", seq2_enemy1);
+
+    AnimationData seq2_enemy2;
+    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
+    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseIn));
+    seq2_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseIn));
+    seq2_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseIn));
+    seq2_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
+    seq2_enemy2.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("ScaleLerpEaseIn", seq2_enemy2);
+
+    AnimationData seq2_enemy3;
+    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
+    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseOut));
+    seq2_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseOut));
+    seq2_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseOut));
+    seq2_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
+    seq2_enemy3.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("ScaleLerpEaseOut", seq2_enemy3);
+
+    AnimationData seq2_enemy4;
+    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
+    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseInOut));
+    seq2_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseInOut));
+    seq2_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseInOut));
+    seq2_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
+    seq2_enemy4.Duration = 5.f;
+    g_pAnimationManager->AddAnimation("ScaleLerpEaseInOut", seq2_enemy4);
+
 }
