@@ -752,40 +752,40 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     //const float CAMERA_MOVE_SPEED = 5.f;
     const float MOVE_SPEED = 5.f;
     const float PI = 3.141f;
-    if (key == GLFW_KEY_A)
-    {
-        g_player->yRotation += PI / 10;
-        
-        //::g_cameraEye.x -= CAMERA_MOVE_SPEED;
-        //::g_cameraEye += (glm::normalize(glm::cross(g_upVector, (::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED)));
-        
-    }
-    if (key == GLFW_KEY_D)
-    {
-        g_player->yRotation -= PI / 10;
-        //::g_cameraEye.x += CAMERA_MOVE_SPEED;
-        //::g_cameraEye -= (glm::normalize(glm::cross(g_upVector, (::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED)));
-    }
-    if (key == GLFW_KEY_W)
-    {
-        g_player->position += (g_player->direction );
-        //::g_cameraEye.z -= CAMERA_MOVE_SPEED;
-        //::g_cameraEye += ((::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED);
-    }
-    if (key == GLFW_KEY_S)
-    {
-        g_player->position -= (g_player->direction);
-        //::g_cameraEye.z += CAMERA_MOVE_SPEED;
-        //::g_cameraEye -= ((::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED);
-    }
-    if (key == GLFW_KEY_Q)
-    {
-        //::g_cameraEye.y -= CAMERA_MOVE_SPEED;
-    }
-    if (key == GLFW_KEY_E)
-    {
-        //::g_cameraEye.y += CAMERA_MOVE_SPEED;
-    }
+    //if (key == GLFW_KEY_A)
+    //{
+    //    g_player->yRotation += PI / 10;
+    //    
+    //    //::g_cameraEye.x -= CAMERA_MOVE_SPEED;
+    //    //::g_cameraEye += (glm::normalize(glm::cross(g_upVector, (::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED)));
+    //    
+    //}
+    //if (key == GLFW_KEY_D)
+    //{
+    //    g_player->yRotation -= PI / 10;
+    //    //::g_cameraEye.x += CAMERA_MOVE_SPEED;
+    //    //::g_cameraEye -= (glm::normalize(glm::cross(g_upVector, (::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED)));
+    //}
+    //if (key == GLFW_KEY_W)
+    //{
+    //    g_player->position += (g_player->direction );
+    //    //::g_cameraEye.z -= CAMERA_MOVE_SPEED;
+    //    //::g_cameraEye += ((::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED);
+    //}
+    //if (key == GLFW_KEY_S)
+    //{
+    //    g_player->position -= (g_player->direction);
+    //    //::g_cameraEye.z += CAMERA_MOVE_SPEED;
+    //    //::g_cameraEye -= ((::g_cameraFront * glm::vec3(1, 0, 1)) * CAMERA_MOVE_SPEED);
+    //}
+    //if (key == GLFW_KEY_Q)
+    //{
+    //    //::g_cameraEye.y -= CAMERA_MOVE_SPEED;
+    //}
+    //if (key == GLFW_KEY_E)
+    //{
+    //    //::g_cameraEye.y += CAMERA_MOVE_SPEED;
+    //}
     if (key == GLFW_KEY_SPACE && action == GLFW_RELEASE)
     {
         //::g_cameraEye = glm::vec3(-5.5f, -3.4f, 15.0f);
@@ -1063,8 +1063,8 @@ void createAnimation(cVAOManager* pVAOManager)
 
     //sequence 2
     AnimationData seq2_enemy1;
-    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, None));
-    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, None));
+    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 0.f, None));
+    seq2_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 5.f, None));
     seq2_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, None));
     seq2_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, None));
     seq2_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, None));
@@ -1073,8 +1073,8 @@ void createAnimation(cVAOManager* pVAOManager)
     Enemy1->Animation.seq.push_back("ScaleLerpNoEasing");
 
     AnimationData seq2_enemy2;
-    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
-    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseIn));
+    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 0.f, EaseIn));
+    seq2_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 5.f, EaseIn));
     seq2_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseIn));
     seq2_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseIn));
     seq2_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
@@ -1084,8 +1084,8 @@ void createAnimation(cVAOManager* pVAOManager)
 
 
     AnimationData seq2_enemy3;
-    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
-    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseOut));
+    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 0.f, EaseOut));
+    seq2_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 5.f, EaseOut));
     seq2_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseOut));
     seq2_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseOut));
     seq2_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
@@ -1095,8 +1095,8 @@ void createAnimation(cVAOManager* pVAOManager)
 
 
     AnimationData seq2_enemy4;
-    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
-    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseInOut));
+    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 0.f, EaseInOut));
+    seq2_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 5.f, EaseInOut));
     seq2_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(1.f), 0.f, EaseInOut));
     seq2_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseInOut));
     seq2_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
@@ -1107,11 +1107,11 @@ void createAnimation(cVAOManager* pVAOManager)
 
     //sequence 3
     AnimationData seq3_enemy1;
-    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, None));
-    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, 12.5f), 2.5f, None));
+    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, None));
+    seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, -12.5f), 2.5f, None));
     seq3_enemy1.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, None));
-    seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, None));
-    //seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, None));
+    seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 0.f, None));
+    seq3_enemy1.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 5.f, None));
     seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, None));
     seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, None));
     seq3_enemy1.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, None));
@@ -1120,11 +1120,11 @@ void createAnimation(cVAOManager* pVAOManager)
     Enemy1->Animation.seq.push_back("RotationSlerpNoEasing");
 
     AnimationData seq3_enemy2;
-    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseIn));
-    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, -12.5f), 2.5f, EaseIn));
+    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseIn));
+    seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, 12.5f), 2.5f, EaseIn));
     seq3_enemy2.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseIn));
-    seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseIn));
-    //seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseIn));
+    seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 0.f, EaseIn));
+    seq3_enemy2.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 5.f, EaseIn));
     seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseIn));
     seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseIn));
     seq3_enemy2.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseIn));
@@ -1134,11 +1134,11 @@ void createAnimation(cVAOManager* pVAOManager)
 
 
     AnimationData seq3_enemy3;
-    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, 25.f), 0.f, EaseOut));
-    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, 12.5f), 2.5f, EaseOut));
+    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, -25.f), 0.f, EaseOut));
+    seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, -12.5f), 2.5f, EaseOut));
     seq3_enemy3.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseOut));
-    seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseOut));
-    //seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseOut));
+    seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 0.f, EaseOut));
+    seq3_enemy3.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 5.f, EaseOut));
     seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseOut));
     seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseOut));
     seq3_enemy3.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseOut));
@@ -1148,11 +1148,11 @@ void createAnimation(cVAOManager* pVAOManager)
 
 
     AnimationData seq3_enemy4;
-    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-25.f, 1.f, -25.f), 0.f, EaseInOut));
-    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(-12.5f, 25.f, -12.5f), 2.5f, EaseInOut));
+    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(25.f, 1.f, 25.f), 0.f, EaseInOut));
+    seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(12.5f, 25.f, 12.5f), 2.5f, EaseInOut));
     seq3_enemy4.PositionKeyFrames.push_back(PositionKeyFrame(glm::vec3(0.f, 1.f, 0.f), 5.f, EaseInOut));
-    seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 0.f, EaseInOut));
-    //seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 5.f, EaseInOut));
+    seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(10.f), 0.f, EaseInOut));
+    seq3_enemy4.ScaleKeyFrames.push_back(ScaleKeyFrame(glm::vec3(5.f), 5.f, EaseInOut));
     seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 0.f, EaseInOut));
     seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(0.f, 0.f, 0.f, 1.f), 2.5f, EaseInOut));
     seq3_enemy4.RotationKeyFrames.push_back(RotationKeyFrame(glm::quat(1.f, 0.f, 0.f, 0.f), 5.f, EaseInOut));

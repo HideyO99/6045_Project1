@@ -59,6 +59,7 @@ void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 					{
 						animation.AnimationTime = animationData.Duration;
 						animation.IsPlaying = false;
+						//animation.tag = animation.seq
 						isPlaying = false;
 					}
 				}
