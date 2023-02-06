@@ -808,6 +808,8 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     {
         g_AnimationSeq++;
         g_pAnimationManager->setSequence(g_AnimationSeq);
+        std::cout << "Sequence " << g_AnimationSeq + 1 << std::endl;
+
     }
 
     if (key == GLFW_KEY_LEFT && action == GLFW_RELEASE)
@@ -817,6 +819,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
             g_AnimationSeq--;
         }
         g_pAnimationManager->setSequence(g_AnimationSeq);
+        std::cout << "Sequence " << g_AnimationSeq + 1 << std::endl;
     }
 
     if (key == GLFW_KEY_1 && action == GLFW_RELEASE)

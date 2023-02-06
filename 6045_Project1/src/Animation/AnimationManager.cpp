@@ -114,7 +114,7 @@ void AnimationManager::setSpeed(float speedX)
 	}
 }
 
-void AnimationManager::setSequence(int sequence)
+void AnimationManager::setSequence(unsigned int& sequence)
 {
 	for (size_t i = 0; i < animationOBJList.size(); i++)
 	{
@@ -125,6 +125,10 @@ void AnimationManager::setSequence(int sequence)
 		{
 			animation.tag = animation.seq[sequence].c_str();
 			animation.AnimationTime = 0.f;
+		}
+		else
+		{
+			sequence = animation.seq.size() - 1;
 		}
 	}
 }
