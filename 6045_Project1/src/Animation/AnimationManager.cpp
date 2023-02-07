@@ -4,6 +4,8 @@
 
 AnimationManager::AnimationManager()
 {
+	animationOBJList.empty();
+	continuePlay = false;
 }
 
 AnimationManager::~AnimationManager()
@@ -27,6 +29,7 @@ bool AnimationManager::AddAnimation(const std::string& name, AnimationData anima
 void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 {
 	bool isPlaying = false;
+
 	for (size_t i = 0; i < animationOBJList.size(); i++)
 	{
 		cMeshObj* AnimationOBJ = animationOBJList[i];
@@ -54,13 +57,32 @@ void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 						{
 							animation.AnimationTime = animationData.Duration;
 						}
+
+					}
+					else if (continuePlay)
+					{
+						unsigned nextSeq = animation.curSeq + 1;
+						if (nextSeq < animation.seq.size())
+						{
+							animation.tag = animation.seq[nextSeq].c_str();
+							animation.AnimationTime = 0.0f;
+							animation.curSeq++;
+							std::cout << "play animation sequence " << animation.curSeq + 1 << std::endl;
+							continue;
+						}
+						else
+						{
+							animation.AnimationTime = animationData.Duration;
+							animation.IsPlaying = false;
+							isPlaying = false;
+						}
 					}
 					else
 					{
 						animation.AnimationTime = animationData.Duration;
 						animation.IsPlaying = false;
-						//animation.tag = animation.seq
 						isPlaying = false;
+
 					}
 				}
 				else if (animation.AnimationTime < 0.f)
@@ -74,6 +96,25 @@ void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 						else
 						{
 							animation.AnimationTime = 0.f;
+						}
+
+					}
+					else if (continuePlay)
+					{
+						unsigned nextSeq = animation.curSeq - 1;
+						if (nextSeq < animation.seq.size())
+						{
+							animation.tag = animation.seq[nextSeq].c_str();
+							animation.AnimationTime = animationData.Duration;
+							animation.curSeq--;
+							std::cout << "play animation sequence " << animation.curSeq + 1 << std::endl;
+							continue;
+						}
+						else
+						{
+							animation.AnimationTime = 0.f;
+							animation.IsPlaying = false;
+							isPlaying = false;
 						}
 					}
 					else
@@ -91,6 +132,7 @@ void AnimationManager::AnimationUpdate(bool& playCMD,float dt)
 		}
 	}
 	playCMD = isPlaying;
+
 }
 
 void AnimationManager::play(bool isPlay)
@@ -126,12 +168,18 @@ void AnimationManager::setSequence(unsigned int& sequence)
 		{
 			animation.tag = animation.seq[sequence].c_str();
 			animation.AnimationTime = 0.f;
+			animation.curSeq = sequence;
 		}
 		else
 		{
 			sequence = animation.seq.size() - 1;
 		}
 	}
+}
+
+void AnimationManager::getSequence(unsigned int& sequence)
+{
+	sequence = animationOBJList[0]->Animation.curSeq;
 }
 
 int AnimationManager::FindPositionKeyIndex(const AnimationData& animation, float time)

@@ -54,6 +54,7 @@ public:
 
 	std::string tag;
 	std::vector<std::string> seq;
+	unsigned int curSeq;
 	float AnimationTime;
 	bool IsPlaying;
 	bool IsLooping;

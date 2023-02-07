@@ -116,7 +116,7 @@ int main(void)
     glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
 
     //window = glfwCreateWindow(mode->width, mode->height, "6028 Final", pMainScreen, NULL); //full screen
-    window = glfwCreateWindow(1280, 800, "6017 AI Project1", NULL, NULL);
+    window = glfwCreateWindow(1280, 800, "6045 Animation Project1", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -806,6 +806,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
     if (key == GLFW_KEY_RIGHT && action == GLFW_RELEASE)
     {
+        g_pAnimationManager->getSequence(g_AnimationSeq);
         g_AnimationSeq++;
         g_pAnimationManager->setSequence(g_AnimationSeq);
         std::cout << "Sequence " << g_AnimationSeq + 1 << std::endl;
@@ -814,6 +815,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
     if (key == GLFW_KEY_LEFT && action == GLFW_RELEASE)
     {
+        g_pAnimationManager->getSequence(g_AnimationSeq);
         if (g_AnimationSeq > 0)
         {
             g_AnimationSeq--;
@@ -856,6 +858,19 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     {
         g_pAnimationManager->setSpeed(-1.f);
         std::cout << "Reverse 1X" << std::endl;
+    }
+
+    if (key == GLFW_KEY_C && action == GLFW_RELEASE)
+    {
+        g_pAnimationManager->continuePlay = !g_pAnimationManager->continuePlay;
+        if (g_pAnimationManager->continuePlay)
+        {
+            std::cout << "coninue play enable" << std::endl;
+        }
+        else
+        {
+            std::cout << "coninue play disable" << std::endl;
+        }
     }
 
     //checkBorder();
@@ -987,6 +1002,7 @@ void createAnimation(cVAOManager* pVAOManager)
     //setup animation properties
     cMeshObj* Enemy1 = pVAOManager->findMeshObjAddr("enemy1");
     Enemy1->Animation.tag = "PosLerpNoEasing";
+    Enemy1->Animation.curSeq = 0;
     Enemy1->color_RGBA = glm::vec4(1.f, 1.f, 1.f, 1.f);
     Enemy1->Animation.Speed = 1.f;
     Enemy1->Animation.IsLooping = false;
@@ -996,6 +1012,7 @@ void createAnimation(cVAOManager* pVAOManager)
 
     cMeshObj* Enemy2 = pVAOManager->findMeshObjAddr("enemy2");
     Enemy2->Animation.tag = "PosLerpEaseIn";
+    Enemy2->Animation.curSeq = 0;
     Enemy2->color_RGBA = glm::vec4(1.f, 0.f, 0.f, 1.f);
     Enemy2->Animation.Speed = 1.f;
     Enemy2->Animation.IsLooping = false;
@@ -1005,6 +1022,7 @@ void createAnimation(cVAOManager* pVAOManager)
 
     cMeshObj* Enemy3 = pVAOManager->findMeshObjAddr("enemy3");
     Enemy3->Animation.tag = "PosLerpEaseOut";
+    Enemy3->Animation.curSeq = 0;
     Enemy3->color_RGBA = glm::vec4(1.f, 1.f, 0.f, 1.f);
     Enemy3->Animation.Speed = 1.f;
     Enemy3->Animation.IsLooping = false;
@@ -1014,6 +1032,7 @@ void createAnimation(cVAOManager* pVAOManager)
 
     cMeshObj* Enemy4 = pVAOManager->findMeshObjAddr("enemy4");
     Enemy4->Animation.tag = "PosLerpEaseInOut";
+    Enemy4->Animation.curSeq = 0;
     Enemy4->color_RGBA = glm::vec4(0.f, 1.f, 0.f, 1.f);
     Enemy4->Animation.Speed = 1.f;
     Enemy4->Animation.IsLooping = false;

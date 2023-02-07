@@ -14,9 +14,11 @@ public:
 	void play(bool isPlay);
 	void setSpeed(float speedX);
 	void setSequence(unsigned int& sequence);
+	void getSequence(unsigned int& sequence);
 	//void AnimationUpdate(const std::vector<cMeshObj*>& animationOBJList, float dt);
 
 	std::vector<cMeshObj*> animationOBJList;
+	bool continuePlay;
 
 private:
 	int FindPositionKeyIndex(const AnimationData& animation, float time);
